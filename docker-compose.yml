@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+
+  ubi_vrb:
+    container_name: ubi_vrb_cnt
+    image: ubicoders/vrobots:bridge
+    build: .
+    network_mode: host
+    privileged: true
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+
